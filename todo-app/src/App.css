@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 70vw;
+  background-color: rgb(171, 209, 241);
+  margin: auto;
+}
+nav ul {
+  padding: 10px;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  color: rgb(10, 10, 10);
+}
+nav ul a {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+nav ul a:hover {
+  background-color: aliceblue;
+}
+nav ul a:not(:last-child) {
+  margin-right: 5px;
+}
+.pages {
+  width: 70vh;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+}
+.app {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+}
+.todo {
+  width: 100%;
+  margin: 10px auto;
+  /* border: 1px solid rgb(151, 19, 19); */
+  text-align: center;
+}
+
+.todo input {
+  outline: none;
+  min-width: 30%;
+  padding: 5px 10px;
+  border: 1px solid silver;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+.todo input:focus {
+  border-color: dodgerblue;
+}
+.todo button {
+  width: fit-content;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 0 5px 5px 0;
+}
+.todo button:hover {
+  background-color: rgb(153, 149, 149);
+  border: 1px solid rgb(153, 149, 149);
+  color: whitesmoke;
+}
+.todo-list,
+.completed-list {
+  margin: 10px auto 0 auto;
+  width: 100%;
+  background-color: rgb(211, 217, 223);
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgb(8, 8, 8);
+}
+.completed-list {
+  background-color: rgba(146, 148, 148, 0.5);
+}
+.todo-list h4,
+.completed-list h4 {
+  font-family: sans-serif;
+  color: rgb(82, 79, 79);
+  text-align: center;
+  line-height: 25px;
+  border-bottom: 2px solid rgb(54, 202, 212);
+  padding: 15px;
+}
+.completed-list h4 {
+  border-bottom: 2px solid rgb(88, 184, 190);
+}
+.todo-list ul,
+.completed-list ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.todo-list ul li,
+.completed-list ul li {
+  padding: 5px 0;
+  width: 100%;
+  position: relative;
+}
+.todo-list ul li:not(:last-child),
+.completed-list ul li:not(:last-child) {
+  border-bottom: 1px dashed rgb(85, 83, 83);
+}
+.todo-list ul li button,
+.completed-list ul li button {
+  width: 70px;
+}
+.todo-list ul li button:nth-child(3) {
+  position: absolute;
+  right: 72px;
+}
+.todo-list ul li button:nth-child(4),
+.completed-list ul li button:nth-child(3) {
+  position: absolute;
+  right: 0;
+}
+.todo-list ul li input,
+.completed-list ul li input {
+  margin-right: 10px;
+}

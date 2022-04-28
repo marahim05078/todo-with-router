@@ -1,0 +1,29 @@
+{
+  "todoItems": [
+    {
+      "id": 1650744491239,
+      "title": "Todo 1",
+      "isComplete": false
+    },
+    {
+      "id": 1650744498491,
+      "title": "Todo 2",
+      "isComplete": false
+    },
+    {
+      "id": 1650744504795,
+      "title": "Todo 3",
+      "isComplete": true
+    },
+    {
+      "id": 1650744514659,
+      "title": "Todo 4",
+      "isComplete": true
+    },
+    {
+      "id": 1650744524266,
+      "title": "Todo 5",
+      "isComplete": true
+    }
+  ]
+}
